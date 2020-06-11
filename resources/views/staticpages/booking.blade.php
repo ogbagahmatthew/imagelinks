@@ -112,16 +112,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="sap_tabs">
 				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 					<ul class="resp-tabs-list">
-						<li class="resp-tab-item" ><span>Flights</span></li>
+						<li class="resp-tab-item" ><a href="flights/create"><span>Flights</span></a></li>
 						<!-- <li class="resp-tab-item" ><label>/</label><span>Trains</span></li> -->
-						<li class="resp-tab-item" ><label>/</label><span>Hotels</span></li>
-						<li class="resp-tab-item" ><label>/</label><span>Cabs</span></li>
+						<li class="resp-tab-item" ><label>/</label><a href="hotels/create"><span>Hotels</span></li>
+						<!-- <li class="resp-tab-item" ><label>/</label><span>Cabs</span></li> -->
 						
 					</ul>				  	 
 					<div class="resp-tabs-container">
 						<div class="tab-1 resp-tab-content" >
 							<div class="login-top agileinfo">
-								<h2><a href="flights/create">Search for flights</h2>
+								<!-- <h2><a href="flights/create">Search for flights</h2> -->
 								
 								<!-- <form action="#" method="post">
 									<div class="w3_agileits_main_grid w3l_main_grid">
@@ -158,11 +158,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<option value="category2">New York</option>
 													<option value="category1">Dubai</option>
 													<!-- <option value="category3">America</option> -->
-													<option value="category3">London</option>
+													<!-- <option value="category3">London</option> -->
 													<!-- <option value="category3">Goa</option> -->
-													<option value="category3">Canada</option>
+													<!-- <option value="category3">Canada</option> -->
 													<!-- <option value="category3">Srilanka</option> -->
-												</select>
+												<!-- </select>
 											</div>
 										</div>
 										<div class="clearfix"></div>
@@ -233,8 +233,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="aitssubmitw3ls">
 												<input type="submit" name="submit" value="Search">
 											</div>
-								</form> -->
-							</div>
+								</form> --> -->
+							<!-- </div>
 						</div>
 						<div class="tab-1 resp-tab-content" >
 							<div class="login-top agileits">
@@ -307,11 +307,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<option value="category2">New York</option>
 													<option value="category1">Dubai</option>
 													<!-- <option value="category3">America</option> -->
-													<option value="category3">London</option>
+													<!-- <option value="category3">London</option> -->
 													<!-- <option value="category3">Goa</option> -->
-													<option value="category3">Canada</option>
-												</select>
-											</div>
+													<!-- <option value="category3">Canada</option> -->
+												<!-- </select> -->
+											<!-- </div>
 										</div>
 										
 										<div class="agileinfo_main_grid">
@@ -319,13 +319,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h5>To*</h5>
 												<select id="category1" name="category1" required="">
 												<option value="category2">New York</option>
-													<option value="category1">Dubai</option>
+													<option value="category1">Dubai</option> -->
 													<!-- <option value="category3">America</option> -->
-													<option value="category3">London</option>
+													<!-- <option value="category3">London</option> -->
 													<!-- <option value="category3">Goa</option> -->
-													<option value="category3">Canada</option>
-												</select>
-											</div>
+													<!-- <option value="category3">Canada</option>
+												</select> -->
+											<!-- </div>
 										</div>
 										<div class="clear"></div>
 										</div>
@@ -339,7 +339,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>	
 						<div class="tab-1 resp-tab-content" >
-							<div class="login-top agileits">
+							<div class="login-top agileits"> --> -->
 								<h3>Search for Hotels</h3>
 								<div class="w3layouts_main_grid">
 									<form action="#" method="post" class="w3_form_post">
@@ -427,7 +427,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 							
 						</div>		
-						<div class="tab-1 resp-tab-content" >
+						<!-- <div class="tab-1 resp-tab-content" >
 							<div class="login-top agileinfo">
 								<h2>Search for Cabs</h2>
 									<div class="containerw3layouts-agileits">
@@ -543,7 +543,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</form>
 											</div>
 
-									</div>		
+									</div>		 -->
 							</div>
 						</div>
 					</div>	

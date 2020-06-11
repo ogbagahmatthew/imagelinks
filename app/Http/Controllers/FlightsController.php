@@ -43,7 +43,7 @@ class FlightsController extends Controller
         
         //
         $this->validate($request,[
-            'name' => 'required',
+            // 'name' => 'required',
             // 'from' => 'required',
             'email' => 'required',
             'from' => 'required',
@@ -57,22 +57,22 @@ class FlightsController extends Controller
 
         //Create new post
         // dd($request->image);
-            $flightss= new Flights;
-            $flightss->name = $request->input('name');
-            $flightss->from = $request->input('from');
-            $flightss->to = $request->input('to');
-            $flightss->email= $request->input('email');
-            $flightss->adults = $request->input('adults');
-            $flightss->children = $request->input('children');
-            $flightss->travel_class = $request->input('travel_class');
-            $flightss->departure_on = $request->input('departure_on');
-            $flightss->journey_type = $request->input('journey_type');
+            $flights= new Flights;
+            $flights->name = $request->input('name');
+            $flights->from = $request->input('from');
+            $flights->to = $request->input('to');
+            $flights->email= $request->input('email');
+            $flights->adults = $request->input('adults');
+            $flights->children = $request->input('children');
+            $flights->travel_class = $request->input('travel_class');
+            $flights->departure_on = $request->input('departure_on');
+            $flights->journey_type = $request->input('journey_type');
             // $flightss->password= Hash::make($request['password']);
             // Hash::make($data['password']),
             // dd($request);
             // dd($request);
-            $flightss->save();
-            return redirect('/');
+            $flights->save();
+            return redirect('bookings');
     }
 
     /**
@@ -98,6 +98,21 @@ class FlightsController extends Controller
     public function edit($id)
     {
         //
+        $flights=Flights::find($id);
+        return view('flights.edit')->with('flights', $flights);
+       
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
         $this->validate($request,[
             'name' => 'required',
             // 'from' => 'required',
@@ -113,34 +128,22 @@ class FlightsController extends Controller
 
         //Create new post
         // dd($request->image);
-            $flightss= new Flights;
-            $flightss->name = $request->input('name');
-            $flightss->from = $request->input('from');
-            $flightss->to = $request->input('to');
-            $flightss->email= $request->input('email');
-            $flightss->adults = $request->input('adults');
-            $flightss->children = $request->input('children');
-            $flightss->travel_class = $request->input('travel_class');
-            $flightss->departure_on = $request->input('departure_on');
-            $flightss->journey_type = $request->input('journey_type');
+            $flights=Flights::find($id);
+            $flights->name = $request->input('name');
+            $flights->from = $request->input('from');
+            $flights->to = $request->input('to');
+            $flights->email= $request->input('email');
+            $flights->adults = $request->input('adults');
+            $flights->children = $request->input('children');
+            $flights->travel_class = $request->input('travel_class');
+            $flights->departure_on = $request->input('departure_on');
+            $flights->journey_type = $request->input('journey_type');
             // $flightss->password= Hash::make($request['password']);
             // Hash::make($data['password']),
             // dd($request);
             // dd($request);
-            $flightss->save();
-            return redirect('/');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
+            $flights->save();
+            return redirect('homepages');
     }
 
     /**

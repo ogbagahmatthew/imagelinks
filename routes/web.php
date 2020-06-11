@@ -26,6 +26,7 @@ Route::get('icons', 'StaticpagesController@icons');
 Route::get('typography', 'StaticpagesController@typography');
 
 Route::resource('flights', 'FlightsController'); 
+Route::resource('hotels', 'HotelController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
